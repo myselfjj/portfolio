@@ -26,16 +26,34 @@
 <body class="bg-slate-950 text-slate-100 font-sans antialiased leading-relaxed selection:bg-blue-500 selection:text-white">
 
   <!-- NAVBAR -->
-  <nav class="fixed top-0 left-0 w-full bg-slate-950/80 backdrop-blur-md z-50 border-b border-slate-800/80">
+  <nav class="fixed top-0 left-0 w-full bg-slate-950/90 backdrop-blur-md z-50 border-b border-slate-800/80">
     <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
       <a href="#" class="font-bold text-lg text-white tracking-tight">Jayesh Jadhav<span class="text-blue-500">.</span></a>
-      <div class="flex items-center space-x-6 text-sm font-medium text-slate-400">
+      
+      <!-- DESKTOP NAV -->
+      <div class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-400">
         <a href="#about" class="hover:text-white transition">About</a>
         <a href="#projects" class="hover:text-white transition">Projects</a>
         <a href="#experience" class="hover:text-white transition">Experience</a>
         <a href="#skills" class="hover:text-white transition">Skills</a>
         <a href="mailto:jayeshjadhav1411@gmail.com" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg text-xs font-semibold transition">Contact</a>
       </div>
+
+      <!-- MOBILE HAMBURGER BUTTON -->
+      <button id="menu-btn" aria-label="Toggle Menu" class="md:hidden p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800/60 focus:outline-none">
+        <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- MOBILE NAVIGATION MENU DRAWER -->
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-4 space-y-3">
+      <a href="#about" class="mobile-link block text-sm font-medium text-slate-300 hover:text-white py-1">About</a>
+      <a href="#projects" class="mobile-link block text-sm font-medium text-slate-300 hover:text-white py-1">Projects</a>
+      <a href="#experience" class="mobile-link block text-sm font-medium text-slate-300 hover:text-white py-1">Experience</a>
+      <a href="#skills" class="mobile-link block text-sm font-medium text-slate-300 hover:text-white py-1">Skills</a>
+      <a href="mailto:jayeshjadhav1411@gmail.com" class="mobile-link inline-block bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg text-xs font-semibold transition mt-2">Contact</a>
     </div>
   </nav>
 
@@ -45,7 +63,7 @@
       Software Engineer building <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">high-performance web apps</span> & AI automation.
     </h1>
     <p class="text-lg text-slate-400 max-w-3xl mb-8 leading-relaxed">
-      4+ years of experience architecting enterprise UI workflows, scalable client-side state management (React/Redux), and cutting-edge AI automation agents.
+      4+ years of experience architecting enterprise UI workflows, scalable client-side state management (React/Redux), and cutting-edge AI automation agents[cite: 1].
     </p>
     <div class="flex flex-wrap gap-4 items-center">
       <a href="#projects" class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold text-sm transition">View Work & Projects</a>
@@ -99,7 +117,7 @@
           </div>
           <h3 class="text-xl font-bold text-white mb-2">RAG AI Automation Agent</h3>
           <p class="text-slate-400 text-sm mb-4 leading-relaxed">
-            Multi-model LLM architecture with dynamic token optimization and Retrieval-Augmented Generation (RAG). Achieved 90% test case automation for the team without writing code.
+            Multi-model LLM architecture with dynamic token optimization and Retrieval-Augmented Generation (RAG). Achieved 90% test case automation for the team without writing code[cite: 1].
           </p>
           <div class="flex flex-wrap gap-2 mb-6">
             <span class="bg-slate-800 text-slate-300 text-xs px-2.5 py-1 rounded-md">RAG</span>
@@ -128,9 +146,9 @@
           <span class="text-xs font-mono text-slate-400">04/2025 – Present | Hyderabad</span>
         </div>
         <ul class="text-slate-400 text-sm space-y-2 list-disc list-inside">
-          <li>Architected enterprise Theme Builder UI components with React.js, Redux, and Seismic paired with GraphQL/GlideRecord queries.</li>
-          <li>Engineered Service Catalog Center Health Score Engine (database schema & 15+ metric rules), improving visibility and cutting diagnostic resolution time by ~40%.</li>
-          <li>Boosted developer efficiency by 50%+ by leveraging Claude Code for daily workflow automation.</li>
+          <li>Architected enterprise Theme Builder UI components with React.js, Redux, and Seismic paired with GraphQL/GlideRecord queries[cite: 1].</li>
+          <li>Engineered Service Catalog Center Health Score Engine (database schema & 15+ metric rules), improving visibility and cutting diagnostic resolution time by ~40%[cite: 1].</li>
+          <li>Boosted developer efficiency by 50%+ by leveraging Claude Code for daily workflow automation[cite: 1].</li>
         </ul>
       </div>
 
@@ -141,9 +159,9 @@
           <span class="text-xs font-mono text-slate-400">07/2022 – 04/2025 | Hyderabad</span>
         </div>
         <ul class="text-slate-400 text-sm space-y-2 list-disc list-inside">
-          <li>Delivered responsive frontend interfaces for Core Content using React.js, JavaScript, and HTML/CSS.</li>
-          <li>Engineered client-side state management for signature execution flows, boosting user workflow completion speed by ~20%.</li>
-          <li>Built and scaled a BDD automation framework (Selenium, Java, Cucumber) integrated with Jenkins CI/CD, reducing regression cycles by ~60%.</li>
+          <li>Delivered responsive frontend interfaces for Core Content using React.js, JavaScript, and HTML/CSS[cite: 1].</li>
+          <li>Engineered client-side state management for signature execution flows, boosting user workflow completion speed by ~20%[cite: 1].</li>
+          <li>Built and scaled a BDD automation framework (Selenium, Java, Cucumber) integrated with Jenkins CI/CD, reducing regression cycles by ~60%[cite: 1].</li>
         </ul>
       </div>
 
@@ -154,8 +172,8 @@
           <span class="text-xs font-mono text-slate-400">08/2021 – 06/2022 | Remote</span>
         </div>
         <ul class="text-slate-400 text-sm space-y-2 list-disc list-inside">
-          <li>Developed reusable UI modules for an internal B2B invoice platform using React.js, TypeScript, and CSS3 supporting 300+ concurrent users.</li>
-          <li>Optimized state management and dynamic REST API fetching, reducing initial grid load times by ~30%.</li>
+          <li>Developed reusable UI modules for an internal B2B invoice platform using React.js, TypeScript, and CSS3 supporting 300+ concurrent users[cite: 1].</li>
+          <li>Optimized state management and dynamic REST API fetching, reducing initial grid load times by ~30%[cite: 1].</li>
         </ul>
       </div>
     </div>
@@ -169,7 +187,7 @@
         <span class="text-xs font-semibold uppercase tracking-wider text-blue-400">ServiceNow Engineering Recognition</span>
         <h3 class="text-xl font-bold text-white mt-1">ServiceNow Q2 2025 Performance Award</h3>
         <p class="text-slate-400 text-sm mt-2 max-w-2xl">
-          Awarded for driving 50%+ developer efficiency gains through daily workflow automation, code generation, and debugging utilizing Claude Code and advanced AI tooling.
+          Awarded for driving 50%+ developer efficiency gains through daily workflow automation, code generation, and debugging utilizing Claude Code and advanced AI tooling[cite: 1].
         </p>
       </div>
       <div class="px-4 py-2 bg-blue-600/20 border border-blue-500/40 text-blue-300 rounded-lg text-xs font-mono font-semibold whitespace-nowrap">
@@ -186,21 +204,21 @@
       <div class="bg-slate-900/30 border border-slate-800 p-5 rounded-xl">
         <h3 class="text-blue-400 font-semibold mb-3 text-sm">Frontend & Core</h3>
         <p class="text-slate-300 text-sm leading-relaxed">
-          React.js, Redux / Redux Toolkit, JavaScript (ES6+), TypeScript, React Hooks, Context API, HTML5, CSS3, Tailwind CSS, Web Performance
+          React.js, Redux / Redux Toolkit, JavaScript (ES6+), TypeScript, React Hooks, Context API, HTML5, CSS3, Tailwind CSS, Web Performance[cite: 1]
         </p>
       </div>
 
       <div class="bg-slate-900/30 border border-slate-800 p-5 rounded-xl">
         <h3 class="text-blue-400 font-semibold mb-3 text-sm">AI, Tools & Automation</h3>
         <p class="text-slate-300 text-sm leading-relaxed">
-          Generative AI, RAG, Multi-Model LLMs, AI Agents, Prompt Engineering, Claude Code, Git, Playwright, Jest, Cucumber, Jenkins
+          Generative AI, RAG, Multi-Model LLMs, AI Agents, Prompt Engineering, Claude Code, Git, Playwright, Jest, Cucumber, Jenkins[cite: 1]
         </p>
       </div>
 
       <div class="bg-slate-900/30 border border-slate-800 p-5 rounded-xl">
         <h3 class="text-blue-400 font-semibold mb-3 text-sm">Backend, APIs & DB</h3>
         <p class="text-slate-300 text-sm leading-relaxed">
-          Node.js, Express.js, GraphQL, REST APIs, GlideRecord, MySQL, Snowflake, ServiceNow Tables
+          Node.js, Express.js, GraphQL, REST APIs, GlideRecord, MySQL, Snowflake, ServiceNow Tables[cite: 1]
         </p>
       </div>
 
@@ -215,6 +233,25 @@
       jayeshjadhav1411@gmail.com
     </a>
   </footer>
+
+  <!-- MOBILE MENU SCRIPT -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    // Toggle menu view
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Auto-close menu drawer when a link is clicked
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
 
 </body>
 </html>
